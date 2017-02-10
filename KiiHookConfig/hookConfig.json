@@ -1,0 +1,21 @@
+{
+  "kiicloud://scheduler": {
+    "DailyCheckBirthday_8am": {
+      "cron": "0 1 * * *",
+      "endpoint": "<your_scheduler_function_name_1>",
+      "what": "EXECUTE_SERVER_CODE"
+    },
+    "1stMonthlyCheckReservationUser_8pm": {
+      "cron": "0 13 1 * *",
+      "endpoint": "<your_scheduler_function_name_2>",
+      "what": "EXECUTE_SERVER_CODE"
+    }
+  },
+  "kiicloud://buckets/<your_bucket_name>": [
+      {
+        "when": "DATA_OBJECT_CREATED",
+        "what": "EXECUTE_SERVER_CODE",
+        "endpoint": "<your_trigger_function_name>"
+      }
+    ]
+}
