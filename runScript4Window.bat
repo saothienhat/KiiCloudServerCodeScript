@@ -108,7 +108,7 @@ GOTO End
 :option_2
 ECHO %option_2%
 rem Deploy Server Code ==> Make sure that you update 2 files: KiiServerCode/servercode.js & KiiHookConfig/hookConfig.json
-node bin/kii-servercode.js deploy-file --file ../KiiServerCode/servercode.js %appKeys% --hook-config ../KiiHookConfig/hookConfig.json
+node bin/kii-servercode.js deploy-file --file %ServerCodeFilePath% %appKeys% --hook-config %HookConfigFilePath%
 GOTO End
 
 :option_3

@@ -5,22 +5,18 @@ Every command execution requires at least the following context information: sit
 
 ## Project structure
 
-- Files folder: source code
-- KiiHookConfig folder : server hook configuration file defines the timing when your server code is launched ( Refer https://docs.kii.com/en/guides/serverextension/managing_servercode/server_hook/)
-- KiiServerCode folder: folder contain final servercode.js file
 - unzip 'kii-cli' folder at step 1.
 - runScript4Window.bat file: utility for Window system ==> RUN IT if your system is Window
 - README.txt
 
 
 ## kii-cli.zip info:
--	Download at:
--	Go to download file folder and run 'npm install' command to install necessary plugins in package.json file.
+-	NA
 
 3) Step 2: set up enviroments for your Kii project
 
 ### Install node modules
-Install the command line tool by running the below commands in your terminal
+Install the command line tool by running the below commands in your terminals:
 `````````
 cd kii-cli
 npm install
