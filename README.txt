@@ -1,20 +1,23 @@
 
 Every command execution requires at least the following context information: site, app-id, app-key, client-id and client-secret or token
 
-1) Step 1: download kii-cli lib from Kii ( Refer at https://docs.kii.com/en/guides/commandlinetools/)
-2) Step 2: put downloaded kii-cli at Step 1 into folder which contains this README file. Then, you will have folder with below structure:
+1) Step 1: unzip 'kii-cli.zip' file. Then, you will have folder with below structure:
 
 ## Project structure
 
 - Files folder: source code
 - KiiHookConfig folder : server hook configuration file defines the timing when your server code is launched ( Refer https://docs.kii.com/en/guides/serverextension/managing_servercode/server_hook/)
 - KiiServerCode folder: folder contain final servercode.js file
-- Download kii-cli folder at step 1 : Kii command line interface to use with server code ( Refer at https://docs.kii.com/en/guides/commandlinetools/)
+- unzip 'kii-cli' folder at step 1.
 - runScript4Window.bat file: utility for Window system ==> RUN IT if your system is Window
 - README.txt
 
 
-3) Step 3: set up enviroments for your Kii project
+## kii-cli.zip info:
+-	Download at:
+-	Go to download file folder and run 'npm install' command to install necessary plugins in package.json file.
+
+3) Step 2: set up enviroments for your Kii project
 
 ### Install node modules
 Install the command line tool by running the below commands in your terminal
@@ -46,7 +49,7 @@ You can get the required parameters for authentication from the developer portal
 
 (Refer https://docs.kii.com/en/guides/serverextension/executing_servercode/tool_scheduled_list/)
 
-4) Step 4: How to run
+4) Step 3: How to run
 
 ### Run script
 -	Run runScript4Window.bat file if your system is Window

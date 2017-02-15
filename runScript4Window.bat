@@ -13,8 +13,11 @@ rem ================================
 rem  	Initialize: please fill "your_" parameters with your data
 rem ================================
 
-set kiiDeveloperLogFodder=%cd%\Kii_Logger 
-set KiiLogFile="D:\KiiLogFile.txt"		
+rem Your notepadd++ on Window system
+set notepadPlusPlusAppLocation="C:\Program Files (x86)\Notepad++\notepad++.exe"
+
+set kiiDeveloperLogFodder=%cd%\kii-cli 
+set KiiLogFile="D:\KiiServerCodeLogFile.txt"		
 set ServerCodeFilePath="D:\your_server_code_path\servercode.js"
 set HookConfigFilePath="D:\your_hookConfig_path\hookConfig\hookConfig.json"
 
@@ -161,6 +164,6 @@ rem  	READ OUTPUT FILE
 rem ================================
 
 rem Open %KiiLogFile% by Notepad++
-"C:\Program Files (x86)\Notepad++\notepad++.exe" %KiiLogFile%
+%notepadPlusPlusAppLocation% %KiiLogFile%
 
 
